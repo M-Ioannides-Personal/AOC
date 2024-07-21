@@ -12,12 +12,7 @@ with open("input.txt", "r") as open_file:
     puzzle_input = open_file.read()
 
 current_position = (0, 0)
-directions = {
-        '^': (0, 1),
-        'v': (0, -1),
-        '>': (1, 0),
-        '<': (-1, 0)
-    }
+directions = {"^": (0, 1), "v": (0, -1), ">": (1, 0), "<": (-1, 0)}
 all_visited = [current_position]
 for direction in puzzle_input:
     dx, dy = directions[direction]
@@ -32,8 +27,8 @@ Santa and Robo-Santa start at the same location (delivering two presents to the 
 
 This year, how many houses receive at least one present?
 """
-santa_position = (0,0)
-robo_position = (0,0)
+santa_position = (0, 0)
+robo_position = (0, 0)
 
 all_visited = [santa_position]
 for index, direction in enumerate(puzzle_input):
