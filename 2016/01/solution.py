@@ -39,4 +39,4 @@ for position, instruction in enumerate(puzzle_input):
 
 if __name__ == "__main__":
     ic(f"Part 1: {solution_1}")
-    ic(f"Part 1: {solution_2}")
+    ic(f"Part 2: {solution_2}")
